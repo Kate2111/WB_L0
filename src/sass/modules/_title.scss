@@ -1,0 +1,25 @@
+.title {
+    color: $color-text;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1px;
+    margin-bottom: 6px;
+    &__16{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px; 
+    }
+    &__13{
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+}
+
+.subtitle{
+    color: $color-text;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}

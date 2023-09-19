@@ -4,7 +4,10 @@
 
 @import './UI/burger';
 
+@import './modules/title';
+@import './modules/button';
 @import './modules/header';
+@import './modules/cart';
 
 html{
     box-sizing: border-box;

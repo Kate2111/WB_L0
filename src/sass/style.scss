@@ -7,7 +7,8 @@
 @import './modules/title';
 @import './modules/button';
 @import './modules/header';
-@import './modules/cart';
+@import './modules/amount';
+@import './modules/product';
 
 html{
     box-sizing: border-box;
@@ -23,8 +24,19 @@ body{
 
 .main {
     flex-grow: 1;
-    background-color: #FFFFFF;
+    background-color: #f6f6f9;
     border-radius: 24px;
+}
+
+.main__wrapper{
+    display: flex;
+    padding: 24px 0;
+    gap: 32px;
+}
+
+.cart{
+    flex: 1;
+    padding-top: 10px;
 }
 
 .footer {

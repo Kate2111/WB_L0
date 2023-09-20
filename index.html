@@ -39,40 +39,112 @@
         </header>
         <section class="main">
             <div class="container">
-                <section class="cart">
-                    <div class="cart__wrapper">
-                        <h2>Корзина</h2>
+                <section class="main__wrapper">
+                    <div class="cart">
+                        <div class="product">
+                            <h1 class="title__28">Корзина</h1>
+                            <div class="product__wrapper">
+                                <div class="product__selector">
+                                    <div class="basket__wrapperCheckbox">
+                                        <input class="basket__input" id="Choose-all" type="checkbox" name="Choose-all" checked="checked">
+                                        <label class="basket__label title__16" for="Choose-all"><p>Выбрать все</p></label>
+                                    </div>
+                                    <button class="button__close">
+                                        <img src="./src/icons/roll-up.svg" alt="close">
+                                    </button>
+                                </div>
+                                <div class="product__list">
+                                    <div class="product__item">
+                                        <div class="product__item-inner">
+                                            <div class="product__checkbox">
+                                                <div class="basket__wrapperCheckbox marginCheckbox mobileCheckbox">
+                                                    <input class="basket__input input-js" id="t-shirt" type="checkbox" checked="checked">
+                                                    <label class="basket__label" for="t-shirt"></label>
+                                                </div>
+                                                <a class="product__item-link" href="/">
+                                                    <img class="product__item-img" src="./src/img/t-shirt.jpg" alt="t-shirt">
+                                                </a>
+                                            </div>
+                                            
+                                            <div class="product__info">
+                                                <p class="title">Футболка UZcotton мужская</p>
+                                                <div class="product__info_properties">
+                                                    <p class="title__13">Цвет: белый</p>
+                                                    <p class="title__13">Размер: 56</p>
+                                                </div>
+                                               <div class="product__info_stock">
+                                                    <p class="product__info-grey title__13">Коледино WB</p>
+                                                    <p class="product__info-grey title__13">OOO Вайлдберриз</p>
+                                               </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="product__item-inner">
+                                            <div class="product__count">
+                                                <div class="product__count-item" data-price="522" data-sale="1051">
+                                                    <button data-direction="minus" disabled="disabled" type="button">
+                                                        <img src="./src/icons/item-cart/minus.svg" alt="minus">
+                                                    </button>
+                                                    <input type="text" maxlength="2" value="1">
+                                                    <button data-direction="plus" type="button">
+                                                        <img src="./src/icons/item-cart/plus.svg" alt="plus">
+                                                    </button>
+                                                </div>
+                                                <p class="product__count-red title__13">Осталось 2 шт.</p>
+                                                <div class="product__count-buttons">
+                                                    <button>
+                                                        <img src="./src/icons/item-cart/favorite.svg" alt="favorite">
+                                                    </button>
+                                                    <button>
+                                                        <img src="./src/icons/item-cart/remove.svg" alt="remove">
+                                                    </button>
+                                                </div>
+                                            </div>
+    
+                                            <div class="product__total">
+                                                <p class="title__20">522 <span class="title__16-bold">сом</span></p>
+                                                <p class="product__total-old title__13">1051 сом</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absence"></div>
+                        <div class="delivery"></div>
+                        <div class="payment"></div>
+                        <div class="recipient"></div>
                     </div>
-                    <div class="cart__price">
-                        <div class="cart__total-price">
-                            <div class="cart__item title">
+                    <div class="amount">
+                        <div class="amount__total-price">
+                            <div class="amount__item title__24">
                                 <p>Итого</p>
                                 <p>2 101 063 сом</p>
                             </div>
-                            <div class="cart__item">
-                                <p class="title__16">203 товара</p>
-                                <p class="title__16">2 302 048 сом</p>
+                            <div class="amount__item">
+                                <p class="title">203 товара</p>
+                                <p class="title">2 302 048 сом</p>
                             </div>
-                            <div class="cart__item">
-                                <p class="title__16">Скидка</p>
-                                <p class="title__16">−200 985 сом</p>
+                            <div class="amount__item">
+                                <p class="title">Скидка</p>
+                                <p class="title">−200 985 сом</p>
                             </div>
-                            <div class="cart__item">
-                                <p class="title__16">Доставка</p>
-                                <p class="title__16">Бесплатно</p>
+                            <div class="amount__item">
+                                <p class="title">Доставка</p>
+                                <p class="title">Бесплатно</p>
                             </div>
                         </div>
 
-                        <div class="cart__delivety">
-                            <div class="cart__item subtitle">
+                        <div class="amount__delivety">
+                            <div class="amount__item subtitle">
                                 <p>Доставка в пункт выдачи</p>
                                 <img src="./src/icons/total-price/pen.svg" alt="pen">
                             </div>
 
                             <p class="title__13">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
-                            <p class="cart__delivety-date title__13">5–8 фев</p>
+                            <p class="amount__delivety-date title__13">5–8 фев</p>
                             
-                            <div class="cart__delivety-return">
+                            <div class="amount__delivety-return">
                                 <img src="./src/icons/total-price/return.svg" alt="return_delivety">
                                 <p class="title__13">
                                     Обратная доставка товаров на склад при отказе — <span>бесплатно</span>
@@ -80,21 +152,21 @@
                             </div>
                         </div>
 
-                        <div class="cart__pay">
-                            <div class="cart__pay-collumn1">
-                                <div class="cart__item subtitle">
+                        <div class="amount__pay">
+                            <div class="amount__pay-collumn1">
+                                <div class="amount__item subtitle">
                                     <p>Оплата картой</p>
                                     <img src="./src/icons/total-price/pen.svg" alt="pen">
                                 </div>
     
-                                <div class="cart__pay-sistem">
+                                <div class="amount__pay-sistem">
                                     <img src="./src/icons/total-price/pay.svg" alt="pay-sistem">
                                     <p class="title__13">1234 12•• •••• 1234</p>
                                 </div>
                             </div>
                             
-                            <div class="cart__pay-collumn2">
-                                <div class="cart__pay-checkbox">
+                            <div class="amount__pay-collumn2">
+                                <div class="amount__pay-checkbox">
                                     <img src="./src/icons/checkbox.svg" alt="checkbox">
                                     <p class="title__13">
                                         Списать оплату сразу
@@ -107,9 +179,9 @@
                             </div>
                         </div>
 
-                        <div class="cart__oder">
+                        <div class="amount__oder">
                             <button class="button">Заказать</button>
-                            <div class="cart__oder-rules">
+                            <div class="amount__oder-rules">
                                 <img src="./src/icons/total-price/rules.svg" alt="rules">
                                 <p class="title__13">Соглашаюсь с правилами пользования торговой площадкой и возврата</p>
                             </div>

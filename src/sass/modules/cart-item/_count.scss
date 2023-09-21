@@ -1,0 +1,39 @@
+.count {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    gap: 8px;
+    height: 99px;
+    &__item{
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        padding: 0 5px;
+        height: 44px;
+        border-radius: 8px;
+        input{
+            border: none;
+            background-color: transparent;
+            width: 50px;
+            text-align: center;
+            top: 7px;
+            position: absolute;
+            left: 25px;
+        }
+    } 
+    &-red{
+        color: rgba(255, 59, 48, 1);
+    }
+    &__butn-wrap{
+        display: flex;
+        justify-content:end;
+        gap: 17px;
+    }
+    button{
+        background-color:transparent;
+        border: none;
+        padding: 0;
+    }
+}

@@ -3,12 +3,19 @@
 @import './libs/fonts';
 
 @import './UI/burger';
+@import './UI/title';
+@import './UI/button';
+@import './UI/checbox';
 
-@import './modules/title';
-@import './modules/button';
 @import './modules/header';
 @import './modules/amount';
-@import './modules/product';
+@import './modules/basket';
+@import './modules/order';
+
+@import './modules/cart-item/box';
+@import './modules/cart-item/count';
+@import './modules/cart-item/info';
+@import './modules/cart-item/total';
 
 html{
     box-sizing: border-box;
@@ -18,6 +25,7 @@ html{
 body{
 	font-family: 'Segoe UI';
     font-weight: normal;
+    color: $color-text;
     height: 100%;
     background-color: $violet;
 }
@@ -37,6 +45,15 @@ body{
 .cart{
     flex: 1;
     padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
 }
 
 .footer {

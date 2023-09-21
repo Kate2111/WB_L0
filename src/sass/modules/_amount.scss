@@ -20,7 +20,7 @@
         display: flex;
         justify-content: space-between;
     }
-    &__delivety {
+    &__delivery {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -48,28 +48,30 @@
     &__pay{
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 10px;
         height: 130px;
         &-collumn1{
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 2px;
         }
         &-sistem{
             display: flex;
-            gap: 8px;
+            gap: 7px;
+            align-items: center;
         }
         &-collumn2{
             display: flex;
             flex-direction: column;
-            padding: 8px 8px 12px 8px;
+            padding: 10px 8px 12px 8px;
             border-radius: 8px;
-            gap: 7px;
+            gap: 6px;
             background-color: rgba(246, 246, 250, 1)
         }
         &-checkbox{
             display: flex;
             gap: 8px;
+            align-items: center;
         }
     }
     &__oder{

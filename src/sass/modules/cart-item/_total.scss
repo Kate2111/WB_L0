@@ -1,0 +1,17 @@
+
+.total{
+    width: 110px;
+    text-align: end;
+    &:nth-child(1n) {
+        .title__20{
+            margin-top: -3px;
+        }
+    }
+    &-old{
+        color:  rgba(151, 151, 175, 1);
+        text-decoration: line-through;
+        text-decoration-color: rgba(151, 151, 175, 1);
+        text-align: end;
+        margin-top: 5px;
+    }
+}

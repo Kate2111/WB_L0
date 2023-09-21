@@ -1,0 +1,68 @@
+.order{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    &__wrapper{
+        padding: 17px 24px 24px;
+        border-radius: 16px;
+        gap: 24px;
+        background-color: $white;
+    }
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        &-update{
+            color: rgba(203, 17, 171, 1);
+            padding-top: 8px;
+            cursor: pointer;
+        }
+    }
+}
+
+.delivery{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-bottom: 22px;
+    &__item{
+        display: flex;
+        gap: 25px;
+        &_title{
+            width: 160px;
+            letter-spacing: -0.5px;
+        }
+    }
+    &__col{
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+    &__row{
+        display: flex;
+        gap: 8px;
+    }
+    &__rating{
+        display: flex;
+        gap: 4px;
+    }
+    &__return{
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        span{
+            color: rgba(12, 180, 119, 1);
+        }
+    }
+}
+
+.payment{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+    &__card{
+        display: flex;
+        gap: 12px;
+    }
+}

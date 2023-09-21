@@ -1,0 +1,21 @@
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    min-height: 90px;
+    gap: 7px;
+    &__properties {
+        display: flex;
+        gap: 16px;
+    }
+    &__stock {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        p{
+            display: flex;
+            gap: 6px;
+        }
+    }
+}

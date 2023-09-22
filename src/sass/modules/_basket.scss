@@ -27,8 +27,32 @@
             display: flex;
             gap: 16px;
             align-items: flex-start;
-            width: 397px;
             justify-content: flex-end;
+        }
+        .inner-1, .inner-2{
+            width: 397px;
+        }
+       
+        @media(max-width: 1024px) {
+            
+            .inner-2{
+                width: 226px;
+            }
+        }
+        @media(max-width: 320px) {
+            gap: 12px;
+            flex-direction: column;
+            .inner-1, .inner-2{
+                width: 100%;
+            }
+            .inner-1{
+                height: 106px;
+            }
+            &-btn{
+                position: absolute;
+                top: 5px;
+                left: 5px; 
+            }
         }
     }
    

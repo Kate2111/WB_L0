@@ -36,4 +36,27 @@
         border: none;
         padding: 0;
     }
+    @media(max-width: 320px) {
+        flex-direction: row;
+        height: 32px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        &__item{
+            width: 80px;
+            input{
+                top: 9px;
+                width: 31px;
+            }
+        }
+        &-red{
+            width: 100px;
+            text-align: center;
+        }
+        &__butn-wrap{
+            width: 88px;
+            gap: 24px;
+            justify-content: center;
+        }
+    }
 }

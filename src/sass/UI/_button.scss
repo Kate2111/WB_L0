@@ -11,6 +11,9 @@
     line-height: 24px;
     text-align: center;
     color: rgba(255, 255, 255, 1);
+    @media(max-width: 1024px) {
+        width: 255px;
+    }
 }
 
 .button__close{

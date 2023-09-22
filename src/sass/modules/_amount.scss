@@ -1,6 +1,7 @@
 .amount {
     width: 429px;
-    height: 572px;
+    min-height: 572px;
+    max-height: 604px;
     padding: 16px 24px 24px 24px;
     border-radius: 16px;
     box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
@@ -9,13 +10,6 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    @media(max-width: 1024px) {
-        width: 304px;
-    }
-    @media(max-width: 320px) {
-        width: 288px;
-    }
-    
     &__item{
         display: flex;
         justify-content: space-between;
@@ -74,7 +68,7 @@
             align-items: center;
         }
     }
-    &__oder{
+    &__order{
         height: 88px;
         display: flex;
         flex-direction: column;
@@ -87,5 +81,21 @@
     }
     &__wrapper{
         flex: 1;
+    }
+    @media(max-width: 1024px) {
+        width: 304px;
+        gap: 24px;
+        &__order{
+            height: 104px;
+            p{
+                padding-right: 10px;
+            }
+        }
+    }
+    @media(max-width: 320px) {
+        width: 100%;
+        background-color: transparent;
+        padding: 8px 16px;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     }
 }

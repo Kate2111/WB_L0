@@ -11,6 +11,8 @@
 @import './modules/amount';
 @import './modules/basket';
 @import './modules/order';
+@import './modules/addressee';
+@import './modules/mob';
 
 @import './modules/cart-item/box';
 @import './modules/cart-item/count';
@@ -38,7 +40,7 @@ body{
 
 .main__wrapper{
     display: flex;
-    padding: 24px 0;
+    padding: 24px 0 50px;
     gap: 32px;
 }
 
@@ -75,12 +77,6 @@ body{
     max-width: 1400px;
     padding: 0 24px;
     margin: 0 auto;
-    @media (max-width: 1024px) {
-      max-width: 976px;
-    }
-    @media (max-width: 320px) {
-      max-width: 750px;
-    }
 }
 
 .wrapper {
@@ -92,4 +88,26 @@ body{
 
 
 
-
+@media (max-width: 1024px) {
+    .container{
+        width: 100%;
+    }
+}
+@media(max-width: 320px){
+    .container{
+        padding: 0;
+    }
+    .product, .absence{
+        padding: 0 16px;
+    }
+    .product{
+        gap: 15px;
+    }
+    .main__wrapper{
+        flex-direction: column;
+        padding: 14px 0 50px;
+    }
+    .cart{
+        padding: 0;
+    }
+}

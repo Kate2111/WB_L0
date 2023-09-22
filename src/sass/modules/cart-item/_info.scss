@@ -18,4 +18,12 @@
             gap: 6px;
         }
     }
+    @media(max-width: 320px) {
+        &__title{
+            width: 192px;
+            overflow: hidden;
+            max-height: 40px;
+        }
+       
+    }
 }

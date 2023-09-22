@@ -1,6 +1,7 @@
 
 .basket__wrapperCheckbox {
     min-height: 24px;
+  
 }
 
 .basket__label {
@@ -22,6 +23,7 @@
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+    
 }
 
 .basket__input:checked+.basket__label:before {

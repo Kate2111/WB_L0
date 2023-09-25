@@ -121,12 +121,10 @@
                                                 </div>
                                                 <p class="count-red title__13">Осталось 2 шт.</p>
                                                 <div class="count__butn-wrap">
-                                                    <button>
+                                                    <button class="count__favorite">
                                                         <img src="./src/icons/item-cart/favorite.svg" alt="favorite">
                                                     </button>
-                                                    <button>
-                                                        <img src="./src/icons/item-cart/remove.svg" alt="remove">
-                                                    </button>
+                                                    <button class="count__remove"></button>
                                                 </div>
                                             </div>
     
@@ -561,6 +559,21 @@
         <footer class="footer">
             <p>© 2022  ООО «Товары и точка»</p>
         </footer>
+
+        <div class="overlay">
+            <div class="modal" id="order">
+                <div class="modal__close">&times;</div>
+                <div class="modal__subtitle">Ваш заказ:</div>
+                <div class="modal__descr">Пульсометр Polar FT1</div>
+                <form class="feed-form feed-form_mt25" action="#">
+                    <input name="name" placeholder="Ваше имя" type="text">
+                    <input name="phone" placeholder="Ваш телефон">
+                    <input name="email" placeholder="Ваш E-mail" type="email">
+                    <button class="button button_submit-review">Купить</button>
+                </form>
+            </div>
+   
+        </div>
     </div>
     <script type="module" src="src/js/main.js"></script>
   </body>

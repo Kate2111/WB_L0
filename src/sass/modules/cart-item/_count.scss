@@ -37,16 +37,18 @@
         padding: 0;
         cursor: pointer;
     }
-    &__remove{
-        background-image: url(../icons/item-cart/remove.svg);
-        width: 20px;
-        &:hover{
-            background-image: url(../icons/item-cart/removeHover.svg);
-        }
+
+    button:disabled {
+        opacity: 0.2;
+    }
+   
+    &__remove-svg:hover path {
+        fill: $orange;
+    }
+    &__favorite-svg:hover path {
+        fill: $pink;
     }
 
-
-    
 
     @media(max-width: 320px) {
         flex-direction: row;
@@ -71,5 +73,9 @@
             justify-content: center;
         }
     }
+}
+
+.active-like{
+    stroke: $pink;
 }
 

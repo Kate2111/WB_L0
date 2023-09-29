@@ -1,0 +1,38 @@
+[
+    {
+        "img_link": "./src/img/t-shirt.jpg",
+        "subtitle": "t-shirt",
+        "title": "Футболка UZcotton мужская",
+        "color": "белый",
+        "size": 56,
+        "price": "261",
+        "old_price": "525",
+        "stoke_title": "OOO Вайлдберриз",
+        "count_order": 2,
+        "balance_stoke": 2
+    },
+    {
+        "img_link": "./src/img/iphone.jpg",
+        "subtitle": "iphone",
+        "title": "Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe",
+        "color": "прозрачный",
+        "size": null,
+        "price": "21023",
+        "old_price": "23014",
+        "stoke_title": "OOO Мегапрофстиль",
+        "count_order": 100,
+        "balance_stoke": 1000
+    },
+    {
+        "img_link": "./src/img/book.jpg",
+        "subtitle": "book",
+        "title": "Карандаши цветные Faber-Castell \"Замок\", набор 24 цвета, заточенные, шестигранные, Faber‑Castell",
+        "color": null,
+        "size": 56,
+        "price": "247",
+        "old_price": "475",
+        "stoke_title": "OOO Вайлдберриз",
+        "count_order": 1,
+        "balance_stoke": 2
+    }
+]

@@ -6,6 +6,7 @@
 @import './UI/title';
 @import './UI/button';
 @import './UI/checbox';
+@import './UI/checbox-agree';
 
 @import './modules/header';
 @import './modules/amount';
@@ -87,7 +88,13 @@ body{
     position: relative;
 }
 
+.hide {
+    display: none;
+}
 
+.show{
+    display: flex;
+}
 
 @media (max-width: 1024px) {
     .container{

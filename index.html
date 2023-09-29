@@ -27,11 +27,12 @@
                     <li class="header__item">
                         <div class="header__item-profile"> 
                             <img src="./src/icons/header/Profile.svg" alt="profile">
-                            <p>Профиль</p>
+                            <p class="text">Профиль</p>
                         </div>
                         <div class="header__item-cart">
                             <img src="./src/icons/header/Cart.svg" alt="cart">
-                            <p>Корзина</p>
+                            <p  class="text">Корзина</p>
+                            <p class="header__item-cart_count total-count"></p>
                         </div>
                     </li>
                 </ul>
@@ -69,193 +70,10 @@
                                     </div>
                                     
                                     <button class="button__close">
-                                        <img src="./src/icons/roll-up.svg" alt="close">
+                                        <img src="./src/icons/close.svg" alt="close">
                                     </button>
                                 </div>
-                                <div class="basket__list">
-                                    <div class="basket__item">
-                                        <div class="basket__item-inner inner-1">
-                                            <div class="box">
-                                                <div class="basket__item-btn">
-                                                    <div class="basket__wrapperCheckbox marginCheckbox mobileCheckbox">
-                                                        <input class="basket__input input-js" id="t-shirt" type="checkbox" checked="checked">
-                                                        <label class="basket__label" for="t-shirt"></label>
-                                                    </div>
-                                                </div>
-                                                
-                                                <a class="box__link" href="/">
-                                                    <img class="box__image" src="./src/img/t-shirt.jpg" alt="t-shirt">
-                                                </a>
-                                            </div>
-                                            
-                                            <div class="info">
-                                                <div class="mob__total">
-                                                    <p class="title__16-bold">522 <span class="title__16-bold">сом</span></p>
-                                                    <p class="total-old title__13">1051 сом</p>
-                                                </div>
-                                                <p class="title info__title">Футболка UZcotton мужская</p>
-                                                <div class="info__properties">
-                                                    <p class="title__13">Цвет: белый</p>
-                                                    <p class="title__13">Размер: 56</p>
-                                                </div>
-                                               <div class="info__stock">
-                                                    <p class="color-grey title__13">Коледино WB</p>
-                                                    <p class="color-grey title__13">
-                                                        OOO Вайлдберриз
-                                                        <img src="./src/icons/item-cart/info.svg" alt="info">
-                                                    </p>
-                                               </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="basket__item-inner inner-2">
-                                            <div class="count">
-                                                <div class="count__item" data-price="522" data-sale="1051">
-                                                    <button data-direction="minus" disabled="disabled" type="button">
-                                                        <img src="./src/icons/item-cart/minus.svg" alt="minus">
-                                                    </button>
-                                                    <input type="text" maxlength="2" value="1">
-                                                    <button data-direction="plus" type="button">
-                                                        <img src="./src/icons/item-cart/plus.svg" alt="plus">
-                                                    </button>
-                                                </div>
-                                                <p class="count-red title__13">Осталось 2 шт.</p>
-                                                <div class="count__butn-wrap">
-                                                    <button class="count__favorite">
-                                                        <img src="./src/icons/item-cart/favorite.svg" alt="favorite">
-                                                    </button>
-                                                    <button class="count__remove"></button>
-                                                </div>
-                                            </div>
-    
-                                            <div class="total">
-                                                <p class="title__20">522 <span class="title__16-bold">сом</span></p>
-                                                <p class="total-old title__13">1051 сом</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="basket__item">
-                                        <div class="basket__item-inner inner-1">
-                                            <div class="box">
-                                                <div class="basket__item-btn">
-                                                    <div class="basket__wrapperCheckbox marginCheckbox mobileCheckbox">
-                                                        <input class="basket__input input-js" id="t-shirt" type="checkbox" checked="checked">
-                                                        <label class="basket__label" for="t-shirt"></label>
-                                                    </div>
-                                                </div>
-                                               
-                                                <a class="box__link" href="/">
-                                                    <img class="box__image" src="./src/img/iphone.jpg" alt="t-shirt">
-                                                </a>
-                                            </div>
-                                            
-                                            <div class="info">
-                                                <div class="mob__total">
-                                                    <p class="title__16-bold">522 <span class="title__16-bold">сом</span></p>
-                                                    <p class="total-old title__13">1051 сом</p>
-                                                </div>
-                                                <p class="title info__title">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</p>
-                                                <div class="info__properties">
-                                                    <p class="title__13">Цвет: прозрачный</p>
-                                                    <p class="title__13"></p>
-                                                </div>
-                                               <div class="info__stock">
-                                                    <p class="color-grey title__13">Коледино WB</p>
-                                                    <p class="color-grey title__13">
-                                                        OOO Мегапрофстиль
-                                                        <img src="./src/icons/item-cart/info.svg" alt="info">
-                                                    </p>
-                                               </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="basket__item-inner inner-2">
-                                            <div class="count">
-                                                <div class="count__item" data-price="522" data-sale="1051">
-                                                    <button data-direction="minus" disabled="disabled" type="button">
-                                                        <img src="./src/icons/item-cart/minus.svg" alt="minus">
-                                                    </button>
-                                                    <input type="text" maxlength="2" value="200">
-                                                    <button data-direction="plus" type="button">
-                                                        <img src="./src/icons/item-cart/plus.svg" alt="plus">
-                                                    </button>
-                                                </div>  
-                                                <div class="count__butn-wrap">
-                                                    <button>
-                                                        <img src="./src/icons/item-cart/favorite.svg" alt="favorite">
-                                                    </button>
-                                                    <button>
-                                                        <img src="./src/icons/item-cart/remove.svg" alt="remove">
-                                                    </button>
-                                                </div>
-                                            </div>
-    
-                                            <div class="total">
-                                                <p class="title__16-bold">2 100 047 <span class="title__16-bold">сом</span></p>
-                                                <p class="total-old title__13">2 300 047 сом</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="basket__item">
-                                        <div class="basket__item-inner inner-1">
-                                            <div class="box">
-                                                <div class="basket__item-btn">
-                                                    <div class="basket__wrapperCheckbox marginCheckbox mobileCheckbox">
-                                                        <input class="basket__input input-js" id="t-shirt" type="checkbox" checked="checked">
-                                                        <label class="basket__label" for="t-shirt"></label>
-                                                    </div>
-                                                </div>
-                                               
-                                                <a class="box__link" href="/">
-                                                    <img class="box__image" src="./src/img/book.jpg" alt="book">
-                                                </a>
-                                            </div>
-                                            
-                                            <div class="info">
-                                                <div class="mob__total">
-                                                    <p class="title__16-bold">522 <span class="title__16-bold">сом</span></p>
-                                                    <p class="total-old title__13">1051 сом</p>
-                                                </div>
-                                                <p class="title info__title">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber&#8209;Castell</p>
-                                               <div class="info__stock">
-                                                    <p class="color-grey title__13">Коледино WB</p>
-                                                    <p class="color-grey title__13">
-                                                        OOO Вайлдберриз
-                                                        <img src="./src/icons/item-cart/info.svg" alt="info">
-                                                    </p>
-                                               </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="basket__item-inner inner-2">
-                                            <div class="count">
-                                                <div class="count__item" data-price="522" data-sale="1051">
-                                                    <button data-direction="minus" disabled="disabled" type="button">
-                                                        <img src="./src/icons/item-cart/minus.svg" alt="minus">
-                                                    </button>
-                                                    <input type="text" maxlength="2" value="2">
-                                                    <button data-direction="plus" type="button">
-                                                        <img src="./src/icons/item-cart/plus.svg" alt="plus">
-                                                    </button>
-                                                </div>
-                                                <p class="count-red title__13">Осталось 2 шт.</p>
-                                                <div class="count__butn-wrap">
-                                                    <button>
-                                                        <img src="./src/icons/item-cart/favorite.svg" alt="favorite">
-                                                    </button>
-                                                    <button>
-                                                        <img src="./src/icons/item-cart/remove.svg" alt="remove">
-                                                    </button>
-                                                </div>
-                                            </div>
-    
-                                            <div class="total">
-                                                <p class="title__20">494 <span class="title__16-bold">сом</span></p>
-                                                <p class="total-old title__13">950 сом</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="basket__list" data-basket></div>
                             </div>
                         </div>
                         <div class="absence">
@@ -265,108 +83,10 @@
                                         <span style="letter-spacing: -0.5px;">Отсутствуют</span> · <span style="letter-spacing: -0.5px;">3 товара</span>
                                     </p>
                                     <button class="button__close">
-                                        <img src="./src/icons/roll-up.svg" alt="close">
+                                        <img src="./src/icons/close.svg" alt="close">
                                     </button>
                                 </div>
-                                <div class="basket__list">
-                                    <div class="basket__item">
-                                        <div class="basket__item-inner inner-1">
-                                            <div class="box">
-                                                <a class="box__link" href="/">
-                                                    <img class="box-absence" src="./src/img/t-shirt.jpg" alt="t-shirt">
-                                                </a>
-                                            </div>
-                                            
-                                            <div class="info">
-                                                <p class="color-grey title info__title">Футболка UZcotton мужская</p>
-                                                <div class="info__properties">
-                                                    <p class="color-grey title__13">Цвет: белый</p>
-                                                    <p class="color-grey title__13">Размер: 56</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="basket__item-inner inner-2">
-                                            <div class="count">
-                                                <div class="count__butn-wrap">
-                                                    <button>
-                                                        <img src="./src/icons/item-cart/favorite.svg" alt="favorite">
-                                                    </button>
-                                                    <button>
-                                                        <img src="./src/icons/item-cart/remove.svg" alt="remove">
-                                                    </button>
-                                                </div>
-                                            </div>
-    
-                                            <div class="total">
-                                               
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="basket__item">
-                                        <div class="basket__item-inner inner-1">
-                                            <div class="box">
-                                                <a class="box__link" href="/">
-                                                    <img class="box-absence" src="./src/img/iphone.jpg" alt="t-shirt">
-                                                </a>
-                                            </div>
-                                            
-                                            <div class="info">
-                                                <p class="color-grey title info__title">Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe</p>
-                                                <div class="info__properties">
-                                                    <p class="color-grey title__13">Цвет: прозрачный</p>
-                                                    <p class="color-grey title__13"></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="basket__item-inner inner-2">
-                                            <div class="count">                     
-                                                <div class="count__butn-wrap">
-                                                    <button>
-                                                        <img src="./src/icons/item-cart/favorite.svg" alt="favorite">
-                                                    </button>
-                                                    <button>
-                                                        <img src="./src/icons/item-cart/remove.svg" alt="remove">
-                                                    </button>
-                                                </div>
-                                            </div>
-    
-                                            <div class="total">
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="basket__item">
-                                        <div class="basket__item-inner inner-1">
-                                            <div class="box">
-                                                <a class="box__link" href="/">
-                                                    <img class="box-absence" src="./src/img/book.jpg" alt="book">
-                                                </a>
-                                            </div>
-                                            
-                                            <div class="info">
-                                                <p class="color-grey title info__title">Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные, шестигранные, Faber&#8209;Castell</p>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="basket__item-inner inner-2">
-                                            <div class="count">
-                                                <div class="count__butn-wrap">
-                                                    <button>
-                                                        <img src="./src/icons/item-cart/favorite.svg" alt="favorite">
-                                                    </button>
-                                                    <button>
-                                                        <img src="./src/icons/item-cart/remove.svg" alt="remove">
-                                                    </button>
-                                                </div>
-                                            </div>
-    
-                                            <div class="total">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <div class="basket__list" data-absence></div>
                             </div>
                         </div>
                         <div class="order">
@@ -446,29 +166,29 @@
                                 <form action="#" class="addressee" >
                                     <ul class="addressee__inner">
                                         <li class="addressee__input" >
-                                            <h3 class="title__13 color-grey addressee__title-hide">Имя</h3>
+                                            <lable for="name" class="title__13 color-grey addressee__title-hide">Имя</lable>
                                             <input required name="name" id="name" type="text" placeholder="Имя">
                                             <p class="addressee__input-error"></p>
                                         </li>
                                         <li class="addressee__input" >
-                                            <h3 class="title__13 color-grey addressee__title-hide">Фамилия</h3>
+                                            <lable for="surname" class="title__13 color-grey addressee__title-hide">Фамилия</lable>
                                             <input required name="surname" id="surname" type="text" placeholder="Фамилия">
                                             <p class="addressee__input-error"></p>
                                         </li>
                                     </ul>
                                     <ul class="addressee__inner">
                                         <li class="addressee__input" >
-                                            <h3 class="title__13 color-grey addressee__title-hide">Почта</h3>
+                                            <lable for="email" class="title__13 color-grey addressee__title-hide">Почта</lable>
                                             <input required name="email" id="email" type="email" placeholder="Почта">
-                                            <p class="addressee__input-error"></p>
+                                            <p class="addressee__input-error">Проверьте адрес электронной почты</p>
                                         </li>
                                         <li class="addressee__input" >
-                                            <h3 class="title__13 color-grey addressee__title-active">Телефон</h3>
+                                            <lable for="tel" class="title__13 color-grey addressee__title-active">Телефон</lable>
                                             <input required name="tel" id="tel" type="tel" value="+7 988 123-45-67" placeholder="Телефон">
                                             <p class="addressee__input-error"></p>
                                         </li>
                                         <li class="addressee__input" >
-                                            <h3 class="title__13 color-grey addressee__title-hide">ИНН</h3>
+                                            <lable for="inn" class="title__13 color-grey addressee__title-hide">ИНН</lable>
                                             <input required name="inn" id="inn" type="number" placeholder="ИНН">
                                             <p>Для таможенного оформления</p>
                                         </li>                 
@@ -481,15 +201,15 @@
                         <div class="amount__total-price">
                             <div class="amount__item title__24">
                                 <p>Итого</p>
-                                <p>2 101 063 сом</p>
+                                <p><span id="total_price">2 101 063</span> сом</p>
                             </div>
                             <div class="amount__item">
-                                <p class="title">203 товара</p>
-                                <p class="title">2 302 048 сом</p>
+                                <p class="title"><span class="total-count">203</span> товара</p>
+                                <p class="title"><span id="old_price">2 302 048</span> сом</p>
                             </div>
                             <div class="amount__item">
                                 <p class="title">Скидка</p>
-                                <p class="title">−200 985 сом</p>
+                                <p class="title"><span id="sale">−200 985</span> сом</p>
                             </div>
                             <div class="amount__item">
                                 <p class="title">Доставка</p>
@@ -529,9 +249,9 @@
                             
                             <div class="amount__pay-collumn2">
                                 <div class="amount__pay-checkbox">
-                                    <div class="basket__wrapperCheckbox marginCheckbox mobileCheckbox">
-                                        <input class="basket__input input-js" id="t-shirt" type="checkbox">
-                                        <label class="basket__label" for="t-shirt"></label>
+                                    <div class="basket__wrapperCheckbox">
+                                        <input class="basket__input" id="pay" type="checkbox">
+                                        <label class="basket__label" for="pay"></label>
                                     </div>
                                     <p class="title__13">
                                         Списать оплату сразу
@@ -547,8 +267,12 @@
                         <div class="amount__order">
                             <button class="button">Заказать</button>
                             <div class="amount__order-rules">
-                                <img src="./src/icons/total-price/rules.svg" alt="rules">
-                                <p class="title__13">Соглашаюсь с правилами пользования торговой площадкой и возврата</p>
+                                <div class="agree__wrapperCheckbox">
+                                    <input class="agree__input" id="form-agree" type="checkbox" checked="checked">
+                                    <label class="agree__label" for="form-agree">
+                                        <span class="title__13">Соглашаюсь с правилами пользования торговой площадкой и возврата</span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         
@@ -578,5 +302,4 @@
     <script type="module" src="src/js/main.js"></script>
   </body>
 </html>
-
 

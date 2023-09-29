@@ -1,6 +1,6 @@
 [
     {
-        "img_link": "/WB_L0/assets/img/t-shirt.png",
+        "img_link": "/WB_L0/img/t-shirt.png",
         "subtitle": "t-shirt",
         "title": "Футболка UZcotton мужская",
         "color": "белый",
@@ -12,7 +12,7 @@
         "balance_stoke": 2
     },
     {
-        "img_link": "/WB_L0/assets/img/iphone.png",
+        "img_link": "/WB_L0/img/iphone.png",
         "subtitle": "iphone",
         "title": "Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на Apple iPhone XR, MobiSafe",
         "color": "прозрачный",
@@ -24,7 +24,7 @@
         "balance_stoke": 1000
     },
     {
-        "img_link": "/WB_L0/assets/img/book.png",
+        "img_link": "/WB_L0/img/book.png",
         "subtitle": "book",
         "title": "Карандаши цветные Faber-Castell \"Замок\", набор 24 цвета, заточенные, шестигранные, Faber‑Castell",
         "color": null,

@@ -63,11 +63,11 @@ const cartItem = (data) => {
                     <div class="count">
                         <div class="count__item">
                             <button data-direction="minus">
-                                <img src="./src/icons/item-cart/minus.svg" alt="minus">
+                                <img src="/WB_L0/assets/icons/item-cart/minus.svg" alt="minus">
                             </button>
                             <input data-limit=${this.balance_stoke} value="${this.count}">
                             <button data-direction="plus">
-                                <img src="./src/icons/item-cart/plus.svg" alt="plus">
+                                <img src="/WB_L0/assets/icons/item-cart/plus.svg" alt="plus">
                             </button>
                         </div>
                         <p class="count-red title__13" data-balance=${this.balance_stoke}>Осталось ${this.balance_stoke} шт.</p>

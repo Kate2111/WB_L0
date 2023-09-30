@@ -17,6 +17,9 @@
             display: flex;
             gap: 6px;
         }
+        &-img{
+            cursor: pointer;
+        }
     }
     @media(max-width: 320px) {
         &__title{

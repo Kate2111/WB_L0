@@ -1,4 +1,5 @@
 import {getTotalValue, getTotalSale } from './amount';
+import pay from './payNow';
 
 const  getCountProduct = () => {
     const countItems = document.querySelectorAll('.count__item');
@@ -41,7 +42,8 @@ const  getCountProduct = () => {
             updateButtonsState(count, balanceValue, plusButton, minusButton);
             getTotalValue ('#total_price', '.total [data-price]','data-price');
             getTotalValue ('#old_price', '.total [data-sale]', 'data-sale');
-            getTotalSale('#total_price', '#old_price', '#sale')
+            getTotalSale('#total_price', '#old_price', '#sale');
+            pay();
         }
     });
 

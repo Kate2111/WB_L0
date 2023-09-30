@@ -93,7 +93,7 @@
                             <div class="order__wrapper">
                                 <div class="order__title">
                                     <p class="title__24">Способ доставки</p>
-                                    <button class="order__title-update title__16-bold">Изменить</button>
+                                    <button class="order__title-update title__16-bold" data-delivery>Изменить</button>
                                 </div>
                                 <div class="delivery">
                                     <div class="delivery__item">
@@ -139,14 +139,14 @@
                                 <div class="delivery__return">
                                     <img src="./src/icons/total-price/return.svg" alt="return_delivery">
                                     <p class="title__13">
-                                        Обратная доставка товаров на&nbsp;склад при отказе&nbsp;— <span>бесплатно</span>
+                                        Обратная доставка товаров на&nbsp;склад при отказе&nbsp;— <span class="delivery-free">бесплатно</span>
                                     </p>
                                 </div>
                             </div>
                             <div class="order__wrapper">
                                 <div class="order__title">
                                     <p class="title__24">Способ оплаты</p>
-                                    <button class="order__title-update title__16-bold">Изменить</button>
+                                    <button class="order__title-update title__16-bold" data-pay>Изменить</button>
                                 </div>
 
                                 <div class="payment">
@@ -201,7 +201,7 @@
                         <div class="amount__total-price">
                             <div class="amount__item title__24">
                                 <p>Итого</p>
-                                <p><span id="total_price">2 101 063</span> сом</p>
+                                <p class="amount__item-pay"><span id="total_price">2 101 063</span> сом</p>
                             </div>
                             <div class="amount__item">
                                 <p class="title"><span class="total-count">203</span> товара</p>
@@ -220,7 +220,12 @@
                         <div class="amount__delivery">
                             <div class="amount__item subtitle">
                                 <p>Доставка в пункт выдачи</p>
-                                <img src="./src/icons/total-price/pen.svg" alt="pen">
+                                <button class="button__reset" data-delivery>
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1585 3.05991L16.9401 6.84154L6.72705 17.0546L2.73544 17.8529C2.38557 17.9229 2.07711 17.6144 2.14709 17.2646L2.94541 13.273L13.1585 3.05991ZM4.17707 13.9321L13.1585 4.95072L15.0493 6.84154L6.06789 15.8229L3.70436 16.2956L4.17707 13.9321Z" fill="#CB11AB"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9948 7.78715L12.2132 4.00552L13.6313 2.5874C14.4145 1.8042 15.6843 1.8042 16.4675 2.5874L17.4129 3.53281C18.1961 4.31601 18.1961 5.58584 17.4129 6.36904L15.9948 7.78715ZM16.4675 5.42363C16.7286 5.16256 16.7286 4.73929 16.4675 4.47822L15.5221 3.53281C15.261 3.27174 14.8378 3.27174 14.5767 3.53281L14.104 4.00552L15.9948 5.89634L16.4675 5.42363Z" fill="#CB11AB"/>
+                                    </svg>
+                                </button>
                             </div>
 
                             <p class="title__13">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
@@ -229,7 +234,7 @@
                             <div class="amount__delivery-return">
                                 <img src="./src/icons/total-price/return.svg" alt="return_delivery">
                                 <p class="title__13">
-                                    Обратная доставка товаров на склад при отказе — <span>бесплатно</span>
+                                    Обратная доставка товаров на склад при отказе — <span class="delivery-free">бесплатно</span>
                                 </p>
                             </div>
                         </div>
@@ -238,7 +243,12 @@
                             <div class="amount__pay-collumn1">
                                 <div class="amount__item subtitle">
                                     <p>Оплата картой</p>
-                                    <img src="./src/icons/total-price/pen.svg" alt="pen">
+                                    <button class="button__reset" data-pay>
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.1585 3.05991L16.9401 6.84154L6.72705 17.0546L2.73544 17.8529C2.38557 17.9229 2.07711 17.6144 2.14709 17.2646L2.94541 13.273L13.1585 3.05991ZM4.17707 13.9321L13.1585 4.95072L15.0493 6.84154L6.06789 15.8229L3.70436 16.2956L4.17707 13.9321Z" fill="#CB11AB"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9948 7.78715L12.2132 4.00552L13.6313 2.5874C14.4145 1.8042 15.6843 1.8042 16.4675 2.5874L17.4129 3.53281C18.1961 4.31601 18.1961 5.58584 17.4129 6.36904L15.9948 7.78715ZM16.4675 5.42363C16.7286 5.16256 16.7286 4.73929 16.4675 4.47822L15.5221 3.53281C15.261 3.27174 14.8378 3.27174 14.5767 3.53281L14.104 4.00552L15.9948 5.89634L16.4675 5.42363Z" fill="#CB11AB"/>
+                                        </svg>
+                                    </button>
                                 </div>
     
                                 <div class="amount__pay-sistem">
@@ -265,7 +275,7 @@
                         </div>
 
                         <div class="amount__order">
-                            <button class="button">Заказать</button>
+                            <button class="button amount__order-btn">Заказать</button>
                             <div class="amount__order-rules">
                                 <div class="agree__wrapperCheckbox">
                                     <input class="agree__input" id="form-agree" type="checkbox" checked="checked">
@@ -284,20 +294,126 @@
             <p>© 2022  ООО «Товары и точка»</p>
         </footer>
 
-        <div class="overlay">
-            <div class="modal" id="order">
-                <div class="modal__close">&times;</div>
-                <div class="modal__subtitle">Ваш заказ:</div>
-                <div class="modal__descr">Пульсометр Polar FT1</div>
-                <form class="feed-form feed-form_mt25" action="#">
-                    <input name="name" placeholder="Ваше имя" type="text">
-                    <input name="phone" placeholder="Ваш телефон">
-                    <input name="email" placeholder="Ваш E-mail" type="email">
-                    <button class="button button_submit-review">Купить</button>
-                </form>
+        <div class="modal" id="modal-pay">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <div class="modal__header">
+                        <h4 class="title__20">Способ оплаты</h4>
+                        <button data-close class="modal__close">
+                            <img data-close src="./public/icons/close-modal.svg" alt="close">
+                        </button>
+                    </div>
+                    <div class="modal__main">
+                        <ul class="modal__list">
+                            <li class="modal__item">
+                                <input type="radio">
+                                <div class="modal__item-card">
+                                    <img src="./public/icons/modal/pay/mir.svg" alt="mir">
+                                    <p class="title">1234 56•• •••• 1234</p>
+                                </div>
+                            </li>
+                            <li class="modal__item">
+                                <input type="radio">
+                                <div class="modal__item-card">
+                                    <img src="./public/icons/modal/pay/visa.svg" alt="visa">
+                                    <p class="title">1234 56•• •••• 1234</p>
+                                </div>
+                            </li>
+                            <li class="modal__item">
+                                <input type="radio">
+                                <div class="modal__item-card">
+                                    <img src="./public/icons/modal/pay/mastercard.svg" alt="mastercard">
+                                    <p class="title">1234 56•• •••• 1234</p>
+                                </div>
+                            </li>
+                            <li class="modal__item">
+                                <input type="radio">
+                                <div class="modal__item-card">
+                                    <img src="./public/icons/modal/pay/maestro.svg" alt="maestro">
+                                    <p class="title">1234 56•• •••• 1234</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="button" style="width: 164px;">Выбрать</button>
+                    </div>
+                </div>
             </div>
-   
         </div>
+
+        <div class="modal" id="modal-delivery">
+            <div class="modal__dialog">
+                <div class="modal__content">
+                    <div class="modal__header">
+                        <h4 class="title__20">Способ оплаты</h4>
+                        <button data-close class="modal__close">
+                            <img data-close src="./public/icons/close-modal.svg" alt="close">
+                        </button>
+                    </div>
+                    <div class="modal__main">
+                        <div class="modal__tabs">
+                            <button class="tab title__13-bold">В пункт выдачи</button>
+                            <button class="tab tab-active title__13-bold">Курьером</button>
+                        </div>
+                        <div>
+                            <h5 class="title__13-bold" style="margin-bottom: 8px;">Мои адреса</h5>
+                            <ul class="modal__list">
+                                <li class="modal__item">
+                                    <input type="radio">
+                                    <div class="title__16 modal__item-address">
+                                        Бишкек, улица Табышалиева, 57
+                                    </div>
+                                    <button class="button__reset">
+                                        <svg class="count__remove-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 5C2.5 4.72386 2.72386 4.5 3 4.5H17C17.2761 4.5 17.5 4.72386 17.5 5C17.5 5.27614 17.2761 5.5 17 5.5H3C2.72386 5.5 2.5 5.27614 2.5 5Z" fill="black"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.4584 4.5H16.5059L15.6411 15.6926C15.5405 16.9947 14.4546 18 13.1486 18H6.84639C5.54299 18 4.45829 16.9986 4.35435 15.6994L3.4584 4.5ZM4.5416 5.5L5.35117 15.6196C5.41353 16.3992 6.06435 17 6.84639 17H13.1486C13.9322 17 14.5837 16.3968 14.6441 15.6155L15.4256 5.5H4.5416Z" fill="black"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13 5.5H7V3.46875C7 2.65758 7.65758 2 8.46875 2H11.5312C12.3424 2 13 2.65758 13 3.46875V5.5ZM8.46875 3C8.20987 3 8 3.20987 8 3.46875V4.5H12V3.46875C12 3.20987 11.7901 3 11.5312 3H8.46875Z" fill="black"/>
+                                        </svg>  
+                                    </button>
+                                </li>
+                                <li class="modal__item">
+                                    <input type="radio">
+                                    <div class="title__16 modal__item-address">
+                                        Бишкек, улица Жукеева-Пудовкина, 77/1
+                                    </div>
+                                    <button class="button__reset">
+                                        <svg class="count__remove-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 5C2.5 4.72386 2.72386 4.5 3 4.5H17C17.2761 4.5 17.5 4.72386 17.5 5C17.5 5.27614 17.2761 5.5 17 5.5H3C2.72386 5.5 2.5 5.27614 2.5 5Z" fill="black"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.4584 4.5H16.5059L15.6411 15.6926C15.5405 16.9947 14.4546 18 13.1486 18H6.84639C5.54299 18 4.45829 16.9986 4.35435 15.6994L3.4584 4.5ZM4.5416 5.5L5.35117 15.6196C5.41353 16.3992 6.06435 17 6.84639 17H13.1486C13.9322 17 14.5837 16.3968 14.6441 15.6155L15.4256 5.5H4.5416Z" fill="black"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13 5.5H7V3.46875C7 2.65758 7.65758 2 8.46875 2H11.5312C12.3424 2 13 2.65758 13 3.46875V5.5ZM8.46875 3C8.20987 3 8 3.20987 8 3.46875V4.5H12V3.46875C12 3.20987 11.7901 3 11.5312 3H8.46875Z" fill="black"/>
+                                        </svg>  
+                                    </button>
+                                </li>
+                                <li class="modal__item">
+                                    <input type="radio">
+                                    <div class="title__16 modal__item-address">
+                                        Бишкек, микрорайон Джал, улица Ахунбаева Исы, 67/1
+                                    </div>
+                                    <button class="button__reset">
+                                        <svg class="count__remove-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 5C2.5 4.72386 2.72386 4.5 3 4.5H17C17.2761 4.5 17.5 4.72386 17.5 5C17.5 5.27614 17.2761 5.5 17 5.5H3C2.72386 5.5 2.5 5.27614 2.5 5Z" fill="black"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.4584 4.5H16.5059L15.6411 15.6926C15.5405 16.9947 14.4546 18 13.1486 18H6.84639C5.54299 18 4.45829 16.9986 4.35435 15.6994L3.4584 4.5ZM4.5416 5.5L5.35117 15.6196C5.41353 16.3992 6.06435 17 6.84639 17H13.1486C13.9322 17 14.5837 16.3968 14.6441 15.6155L15.4256 5.5H4.5416Z" fill="black"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13 5.5H7V3.46875C7 2.65758 7.65758 2 8.46875 2H11.5312C12.3424 2 13 2.65758 13 3.46875V5.5ZM8.46875 3C8.20987 3 8 3.20987 8 3.46875V4.5H12V3.46875C12 3.20987 11.7901 3 11.5312 3H8.46875Z" fill="black"/>
+                                        </svg>  
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal__footer">
+                        <button class="button" style="width: 164px;">Выбрать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-info" id="modal-info">
+            
+        </div>
+   
+      
+        
     </div>
     <script type="module" src="src/js/main.js"></script>
   </body>

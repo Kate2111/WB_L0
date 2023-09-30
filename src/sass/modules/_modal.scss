@@ -1,55 +1,87 @@
-.overlay {
-    display: none;
+.modal{
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
     width: 100%;
     height: 100%;
-    top: 0;
-    background-color: rgba($color: #000000, $alpha: .56);
-}
-
-.modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 380px;
-    min-height: 400px;
-    background-color: rgb(231, 228, 228);
-    padding: 38px 40px 40px 40px;
+    overflow: hidden;
+    background-color: rgba(5, 0, 10, 0.3);
+    &__dialog {
+        min-width: 400px;
+        height: 408px;
+        margin: 40px auto;
+        border-radius: 16px;
+        background-color: $white;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+    &__content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 16px 24px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+    }
     &__close {
-        position: absolute;
-        top: 0;
-        right: -40px;
-        font-size: 40px;
-        line-height: 21px;
-        color: $violet;
+        border: none;
+        background-color: transparent;
         cursor: pointer;
     }
-    &__subtitle {
-        color: #000;
-        font-size: 18px;
-        font-weight: 700;
-        text-align: center;
+    &__header{
+        display: flex;
+        margin-bottom: 13px;
+        justify-content: space-between;
+        align-items: flex-end;
     }
-    &__descr {
-        color: #000;
-        font-size: 14px;
-        font-weight: 500;
-        text-align: center;
+    &__main{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
     }
-    &_mini {
-        min-height: 140px;
+    &__footer{
+        margin-top: 16px;
     }
-    .error {
-        border: 1px solid red;
+    &__item{
+        display: flex;
+        gap: 8px;
+        margin-bottom: 8px;
+        &-card{
+            display: flex;
+            gap: 4px;
+        }
+        &-address{
+            flex: 1;
+        }
     }
-    label.error {
-        border: none;
-        text-align: center;
-        margin-bottom: 15px;
+    &__tabs{
+        display: flex;
+        gap: 20px;
     }
 }
 
-#consultation, #order, #thanks {
+.modal-info{
+    position: absolute;
     display: none;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, 0); 
+    border-radius: 8px;
+    flex-direction: column;
+    min-width: 239px;
+    height: 64px;
+    top: 19px;
+    padding: 13px 16px;
+    gap: 8px;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
 }

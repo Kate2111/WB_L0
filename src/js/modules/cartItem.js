@@ -2,7 +2,7 @@ import {getBalanceStoke, getPrice, addFavorite, deleteItem} from './actionItem';
 
 const cartItem = (data) => {
     class MenuCard {
-        constructor(imgLink, subtitle, title, color, size, price, old_price, stoke_title, balance_stoke, count_order, parentSelector) {
+        constructor(imgLink, subtitle, title, color, size, price, old_price, saleProduct, saleUser, stoke_title, balance_stoke, count_order, parentSelector) {
             this.imgLink = imgLink;
             this.subtitle = subtitle;
             this.title = title;
@@ -10,6 +10,8 @@ const cartItem = (data) => {
             this.sixe = size;
             this.price = price;
             this.old_price = old_price;
+            this.saleProduct = saleProduct;
+            this.saleUser = saleUser
             this.stoke_title = stoke_title;
             this.balance_stoke = balance_stoke;
             this.count = count_order;
@@ -51,9 +53,9 @@ const cartItem = (data) => {
                         </div>
                     <div class="info__stock">
                             <p class="color-grey title__13">Коледино WB</p>
-                            <p class="color-grey title__13">
+                            <p class="color-grey title__13 info__stock-name">
                                 ${this.stoke_title}
-                                <img src="./src/icons/item-cart/info.svg" alt="info">
+                                <img class="info__stock-img" src="./src/icons/item-cart/info.svg" alt="info">
                             </p>
                     </div>
                     </div>
@@ -92,8 +94,11 @@ const cartItem = (data) => {
                             <span class="total__item-new">${this.getTotalPrice(this.price)}</span>
                             <span class="title__16-bold">сом</span>
                         </p>
-                        <p class="total-old title__13" data-sale=${this.old_price}>
-                            <span  class="total__item-old">${this.getTotalPrice(this.old_price)}</span> сом
+                        <p class="total-old title__13" data-sale=${this.old_price} data-discount=${this.saleProduct} data-user=${this.saleUser}>
+                            <span class="total__item-old">
+                                ${this.getTotalPrice(this.old_price)}
+                            </span> 
+                            сом
                         </p>
                     </div>
                 </div>
@@ -104,7 +109,7 @@ const cartItem = (data) => {
     }
 
     data.forEach(elem => {
-        new MenuCard(elem.img_link, elem.subtitle, elem.title, elem.color, elem.size, elem.price, elem.old_price, elem.stoke_title, elem.balance_stoke, elem.count_order, '.basket .basket__list').render();
+        new MenuCard(elem.img_link, elem.subtitle, elem.title, elem.color, elem.size, elem.price, elem.old_price, elem.saleProduct, elem.saleUser, elem.stoke_title, elem.balance_stoke, elem.count_order, '.basket .basket__list').render();
     });
     
     getBalanceStoke();
